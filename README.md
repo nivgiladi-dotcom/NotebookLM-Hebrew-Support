@@ -1,3 +1,7 @@
+# NotebookLM Hebrew RTL Support Chrome Extension
+
+A Chrome Extension that adds RTL (Right-to-Left) support for Hebrew text in NotebookLM while preserving math formulas and LaTeX in LTR (Left-to-Right).
+
 ## Before and After
 
 ### ❌ Before (Standard NotebookLM)
@@ -9,10 +13,6 @@ The text is aligned to the left, and math formulas break the Hebrew sentence str
 Hebrew text is aligned to the right, formulas are preserved in LTR, making it perfectly readable.
 
 ![NotebookLM with RTL support](after.png)
-
-# NotebookLM Hebrew RTL Support Chrome Extension
-
-A Chrome Extension that adds RTL (Right-to-Left) support for Hebrew text in NotebookLM while preserving math formulas and LaTeX in LTR (Left-to-Right).
 
 ## Features
 
