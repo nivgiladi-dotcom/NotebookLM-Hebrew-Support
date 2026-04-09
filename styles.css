@@ -1,0 +1,69 @@
+/* Only apply RTL to elements that have the rtl-text class (added by JavaScript) */
+.rtl-text {
+  direction: rtl !important;
+  text-align: right !important;
+  unicode-bidi: isolate;
+}
+
+/* Math and formula containers - Strictly LTR with high specificity */
+.katex,
+.math,
+.mjx-container,
+code,
+pre,
+.math-inline,
+.math-display,
+formula,
+.latex,
+[class*="math"],
+[class*="formula"],
+[class*="katex"],
+[class*="latex"] {
+  direction: ltr !important;
+  display: inline-block !important;
+  text-align: left !important;
+  unicode-bidi: isolate !important;
+}
+
+/* Ensure code blocks remain LTR */
+code, pre {
+  direction: ltr !important;
+  text-align: left !important;
+  unicode-bidi: isolate !important;
+}
+
+/* Protect inline math within RTL text - higher specificity */
+.katex, .math-inline, .mjx-container {
+  unicode-bidi: embed !important;
+  direction: ltr !important;
+  text-align: left !important;
+}
+
+
+/* Exclude navigation and header areas */
+header,
+nav,
+.sidebar,
+.nav-bar,
+.top-bar,
+[class*="nav"],
+[class*="header"],
+[class*="sidebar"],
+[class*="toolbar"] {
+  direction: ltr !important;
+  text-align: left !important;
+}
+
+/* Handle mixed content properly */
+.rtl-mixed {
+  direction: rtl;
+  unicode-bidi: plaintext;
+}
+
+/* Ensure proper text wrapping for Hebrew */
+.rtl-text {
+  direction: rtl;
+  text-align: right;
+  word-wrap: break-word;
+  unicode-bidi: isolate;
+}

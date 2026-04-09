@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "NotebookLM Hebrew RTL Support",
+  "version": "1.0.0",
+  "description": "Adds RTL support for Hebrew text in NotebookLM while keeping math formulas and LaTeX in LTR",
+  "permissions": [
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://notebooklm.google.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://notebooklm.google.com/*"],
+      "css": ["styles.css"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "homepage_url": "https://github.com/yourusername/notebooklm-hebrew-rtl",
+  "author": "Your Name"
+}
